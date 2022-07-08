@@ -1,0 +1,91 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon May 16 12:57:18 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>25 seconds (25480 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.vnv.unacademy.runner.UnacademyRunner.runScenario()'><b>runScenario</b><br>Test class: com.vnv.unacademy.runner.UnacademyRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Panel", "LiveClass_feature"</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.vnv.unacademy.steps.definitions.LiveClassSteps.user_clicks_on_hide_panel_button(LiveClassSteps.java:181)
+	at ?.user clicks on hide panel button(file:///C:/selenium_automation/unacademy/src/resources/unacademy/liveClass.feature:44)
+</pre></div><a href='#' onClick='toggleBox("stack-trace624215294", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace624215294'><pre>java.lang.NullPointerException
+	at com.vnv.unacademy.steps.definitions.LiveClassSteps.user_clicks_on_hide_panel_button(LiveClassSteps.java:181)
+	at ?.user clicks on hide panel button(file:///C:/selenium_automation/unacademy/src/resources/unacademy/liveClass.feature:44)
+</pre></div></td>
+<td>24</td>
+<td>com.vnv.unacademy.runner.UnacademyRunner@6a396c1e</td></tr>
+</table><p>
+</body>
+</html>
